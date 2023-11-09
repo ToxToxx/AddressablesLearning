@@ -9,6 +9,7 @@ public class ImageManager : MonoBehaviour
 {
     [SerializeField] private AssetReference _sprite;
     [SerializeField] private Image _image;
+    private AsyncOperationHandle<Sprite> _handle;
 
     #region CoroutineType
     /*
@@ -35,18 +36,23 @@ public class ImageManager : MonoBehaviour
     //даже если объект неактивен произойдёт подгрузка
     private async void Start()
     {
-        AsyncOperationHandle<Sprite> handle = _sprite.LoadAssetAsync<Sprite>();
-        await handle.Task;
-        if(handle.Status == AsyncOperationStatus.Succeeded )
+        _handle = _sprite.LoadAssetAsync<Sprite>();
+        await _handle.Task;
+        if(_handle.Status == AsyncOperationStatus.Succeeded )
         {
-            Sprite sprite = handle.Result;
+            Sprite sprite = _handle.Result;
             //файл загружен
             _image.sprite = sprite;
-            //очистка
-            Addressables.Release(handle);
+            
         }
     }
 
     #endregion
+
+    private void OnDestroy()
+    {
+        //очистка
+        Addressables.Release(_handle);
+    }
 
 }
