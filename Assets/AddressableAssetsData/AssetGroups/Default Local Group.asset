@@ -42,6 +42,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64978c3c3f54b6347835bbbde5b9084c
+    m_Address: Assets/Scenes/LoadScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8fde7b40eb0e49a4f81d8c3d7a71ab61, type: 2}
   m_SchemaSet:
