@@ -16,7 +16,22 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 6fa04a5095a70294cbc02310ac2b7621
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 7471514ed049c6b47b70b3a5c148cf6d
+    m_Address: Assets/Materials/ThirdSkybox.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33573bc112b795849ab210064516a11d
+    m_Address: Assets/Materials/SecondSkybox.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 005140b08ad36b84bbf104ca93f9466b
+    m_Address: Assets/Materials/FirstSkybox.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8fde7b40eb0e49a4f81d8c3d7a71ab61, type: 2}
   m_SchemaSet:
